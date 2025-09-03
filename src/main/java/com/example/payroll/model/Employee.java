@@ -8,13 +8,13 @@ import jakarta.persistence.Id;
 
 @Entity
 public class Employee {
-  private @Id
-  @GeneratedValue Long id;
+  private @Id @GeneratedValue Long id;
   private String firstName;
   private String lastName;
   private String role;
 
-  Employee() {}
+  Employee() {
+  }
 
   public Employee(String firstName, String lastName, String role) {
     this.firstName = firstName;
@@ -78,6 +78,7 @@ public class Employee {
 
   @Override
   public String toString() {
-    return "Employee{" + "id=" + id + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", role='" + role + '\'' + '}';
+    return "Employee{" + "id=" + id + ", firstName='" + firstName + '\'' + ", lastName='" + lastName + '\'' + ", role='"
+        + role + '\'' + '}';
   }
 }

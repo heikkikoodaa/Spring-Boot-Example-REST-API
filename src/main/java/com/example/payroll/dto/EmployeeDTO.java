@@ -6,7 +6,8 @@ public class EmployeeDTO {
   private String lastName;
   private String role;
 
-  public EmployeeDTO() {}
+  public EmployeeDTO() {
+  }
 
   public EmployeeDTO(Long id, String firstName, String lastName, String role) {
     this.id = id;
